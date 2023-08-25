@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="#">
+
+    <!-- css links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="col-xl-12 wrapper">
+
+        <header class="p-3">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="./index.html"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <img src="./images/logo.png" alt="logo" class="logo">
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="./index.html#home" class="nav-link px-2 text-secondary">Home</a></li>
+                        <li><a href="./index.html#about" class="nav-link px-2 text-dark">About</a></li>
+                        <li><a href="./index.html#faq" class="nav-link px-2 text-dark">FAQs</a></li>
+                        <li><a href="#" class="nav-link px-2 text-dark">Contact</a></li>
+                    </ul>
+
+
+                    <div class="text-end">
+                        <a href="./login.html" class="btn btn-dark me-2" target="_self">Login</a>
+                        <a href="./new-registration.html" class="btn btn-warning" target="_self">Sign-up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header ends here-->
+
+
+        <section>
+            <div class="container pb-5">
+                <div class="row d-flex justify-content-between align-items-center my-4">
+                    <div class="col-auto">
+                        <h5>Profile</h5>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body">
+                              <div class="border-bottom pb-4">
+                                <div class="row align-items-center g-3 g-sm-5 text-center text-sm-start">
+                                  <div class="col-12 col-sm-auto">
+                                    <div class="avatar avatar-5xl">
+                                        <img class="rounded-circle profile-pic" src="images/user.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-sm-auto flex-1">
+                                    <h3>Ansolo Lazinatov</h3>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between pt-4 flex-column flex-md-row">
+                                <div class="py-2">
+                                  <h6 class="mb-2">Last Order</h6>
+                                  <h4 class="fs-1 mb-0">11/02/2023</h4>
+                                </div>
+                                <div class="text-md-end text-start py-2">
+                                  <h6 class="mb-2">Last Amount Paid</h6>
+                                  <h4 class="fs-1 mb-0">120</h4>
+                                </div>
+                                <div class="text-md-end text-start py-2">
+                                  <h6 class="mb-2">Due Amount</h6>
+                                  <h4 class="fs-1 mb-0">30 </h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body d-flex flex-column justify-content-evenly">
+                              <div class="border-bottom">
+                                <h4 class="mb-3 lh-sm lh-xl-1">Default Address
+                                </h4>
+                              </div>
+                              <div class="pt-4 mb-7 mb-lg-4 mb-xl-7">
+                                <div class="row justify-content-between">
+                                  <div class="col-auto">
+                                    <h5 class="text-1000">Address</h5>
+                                  </div>
+                                  <div class="col-auto">
+                                    <p class="text-800">Vancouver, British Columbia<br>Canada</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="border-top border-dashed border-300 pt-4">
+                                <div class="row justify-content-between mb-2">
+                                  <div class="col-auto">
+                                    <h5 class="text-1000 mb-0">Email</h5>
+                                  </div>
+                                  <div class="col-auto"><a class="lh-1" href="#">example@jeemail.com</a></div>
+                                </div>
+                                <div class="row justify-content-between">
+                                  <div class="col-auto">
+                                    <h5 class="text-1000 mb-0">Phone</h5>
+                                  </div>
+                                  <div class="col-auto"><a class="text-800" href="#">+1234567890</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-2">
+                  <div class="col-12">
+                    <h5>Order Details</h5>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-12">
+                    <div class="mb-5 profile-table">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead class="bg-light">
+                            <tr>
+                              <th scope="col">Order Number</th>
+                              <th scope="col">Number of Bottles</th>
+                              <th scope="col">Date of Delivery</th>
+                              <th scope="col">Amount Paid</th>
+                              <th scope="col">Status</th>
+                              <!--<th scope="col">Other</th>-->
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>#9878</td>
+                              <td>6</td>
+                              <td>11/02/2023</td>
+                              <td>120</td>
+                              <td>Delivered</td>
+                              <!--<td>
+                                <div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </div>
+                              </td>-->           
+                            </tr>
+                            <tr>
+                              <td>#9878</td>
+                              <td>6</td>
+                              <td>11/02/2023</td>
+                              <td>120</td>
+                              <td>Delivered</td>
+                            </tr>
+                            <tr>
+                              <td>#9878</td>
+                              <td>6</td>
+                              <td>11/02/2023</td>
+                              <td>120</td>
+                              <td>Delivered</td>  
+                            </tr>
+                            <tr>
+                              <td>#9878</td>
+                              <td>6</td>
+                              <td>11/02/2023</td>
+                              <td>120</td>
+                              <td>Delivered</td>
+                            </tr>
+                            <tr>
+                              <td>#9878</td>
+                              <td>6</td>
+                              <td>11/02/2023</td>
+                              <td>120</td>
+                              <td>Delivered</td>
+                            </tr>
+                            <tr>
+                              <td>#9878</td>
+                              <td>6</td>
+                              <td>11/02/2023</td>
+                              <td>120</td>
+                              <td>Delivered</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <nav aria-label="Page navigation mb-5">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                              <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item " >
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--footer-->
+
+        <section class="text-bg-dark py-3 footer-btm">
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+                    </div>
+
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook" />
+                                </svg></a></li>
+                    </ul>
+                </footer>
+            </div>
+
+        </section>
+
+        <!--Add order modal-->
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New Order</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3 needs-validation" novalidate action="#">
+
+                    <div class="col-xl-12">
+                        <label for="bottles" class="form-label">Number of Bottels</label>
+                        <div class="input-group has-validation">
+                          <input type="number" class="form-control" id="bottles" aria-describedby="inputGroupPrepend" required name="bottles">
+                          <div class="invalid-feedback">
+                            Please enter bottles number.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <label for="current-date" class="form-label">Date</label>
+                      <input type="date" class="form-control" id="current-date" required name="current-date">
+                      <div class="invalid-feedback">
+                        Please enter amount.
+                      </div>
+                  </div>
+                    <div class="col-xl-12">
+                        <label for="amount-paid" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="amount-paid" required name="amount-paid">
+                        <div class="invalid-feedback">
+                          Please enter amount.
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-dark">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
